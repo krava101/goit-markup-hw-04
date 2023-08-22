@@ -1,0 +1,296 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    background-color: #fff;
+
+}
+
+.container{
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6, p{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+a{
+    font-size: 12px;
+    line-height: 1.333;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: #2E2F42;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+.card-header{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+/* Header */
+.page-header{
+    background-color: #fff;
+    border-bottom: 1px solid #E7E9FC;
+    padding: 24px 0;  
+}
+
+.page-header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addres-list{
+    display: flex;
+    gap: 40px;
+    font-style: normal;
+}
+
+.header-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.logo{
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #4D5AE5;
+    margin-right: 76px
+}
+
+.nav-links{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    padding: 24px 0;
+}
+
+.nav-links:hover,
+.nav-links:focus{
+    color: #404BBF;
+}
+
+.logo-part{
+    color: #2e2f42;
+}
+
+.contact-nav-links {
+    color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.contact-nav-links:hover,
+.contact-nav-links:focus {
+    color: #404BBF;
+}
+
+/* Main page */
+
+/* Hero */
+.hero{
+    background-color: #2E2F42;
+    padding: 188px 0;
+}
+
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.page-title{
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+}
+
+.section-header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+.button {
+    border: none;
+    background-color: #4D5AE5;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    padding: 16px 32px;
+    margin-top: 48px;
+    border-radius: 4px;
+    min-width: 169px;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #404BBF;
+}
+
+/* Section 1 */
+
+.benefits{
+    background-color: #fff;
+    padding: 120px 0;
+}
+
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+.benefits-list{
+    display: flex;
+    gap: 24px;
+}
+
+.benefits-card{
+    flex-basis: 264px;
+}
+
+.benefits .card-header{
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+.text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* Section 2 */
+.team{
+    background-color: #F4F4FD;
+    padding: 120px 0;
+}
+
+.team-list li{
+    text-align: center;
+    background-color: #fff;
+}
+
+.team-list{
+    display: flex;
+    gap: 24px;
+}
+
+.team-card{
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team .card-header{
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.team .text{
+    text-align: center;
+}
+
+.team-card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+}
+
+/* Section 3 */
+.portfolio{
+    background-color: #fff;
+    padding: 120px 0;
+}
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-card{
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-card-info{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.portfolio .card-header{
+    margin-bottom: 8px;
+}
+
+/* Footer */
+.page-footer{
+    background-color: #2E2F42;
+    padding: 100px 0
+}
+
+.footer-logo-part{
+   color: #f4f4fd;
+}
+
+.page-footer .text{
+    color: #F4F4FD;
+    width: 264px;
+}
+
+.page-footer .logo{
+    margin-bottom: 16px;
+    margin-right: 0;
+}
