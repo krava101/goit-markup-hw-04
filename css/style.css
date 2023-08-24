@@ -253,9 +253,9 @@ img{
     margin-bottom: 8px;
 }
 
-.benefits-box svg{
-    width: 64px;
-    height: 64px;
+.benefits .link-icon{
+    width: 64;
+    height: 64;
     display: block;
 }
 
@@ -342,11 +342,11 @@ img{
     background-color: #404BBF;
 }
 
-.media-links svg{
+.team .link-icon{
     display: block;
     fill: #F4F4FD;
-    width: 16px;
-    height: 16px;
+    width: 16;
+    height: 16;
 }
 /* Team Section */
 
@@ -468,9 +468,9 @@ img{
     background-color: #31d0aa;
 }
 
-.footer-media-links-svg{
-    width: 24px;
-    height: 24px;
+.footer-media-links .link-icon{
+    width: 24;
+    height: 24;
     fill: #F4F4FD;
 }
 
