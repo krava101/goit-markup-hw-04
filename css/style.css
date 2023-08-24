@@ -47,8 +47,8 @@ img{
 /* Header */
 .page-header{
     background-color: #fff;
-    box-shadow: inset 0px -1px #E7E9FC;
     padding: 24px 0;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .page-header .container{
@@ -98,12 +98,12 @@ img{
 
 .nav-links:hover,
 .nav-links:focus {
-    color: #404BBF;
+    color: #404bbf;
 }
 
 .current::after{
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     content: "";
     height: 4px;
@@ -115,7 +115,7 @@ img{
 
 .current:hover::after,
 .current:focus::after{
-    background-color: #404BBF;
+    background-color: #404bbf;
 }
 
 .logo-part{
@@ -149,7 +149,8 @@ img{
         rgba(46, 47, 66, 0.7)),
         url("../images/hero-image.jpg");
     background-position: 50% 50%;
-    background-size: auto auto;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero .container{
@@ -211,17 +212,17 @@ img{
 }
 
 .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-    }
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .benefits-list{
     display: flex;
@@ -233,21 +234,25 @@ img{
 }
 
 .benefits-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     padding: 24px 100px;
     background-color: #F4F4FD;
     outline: 1px solid #8E8F99;
     border-radius: 4px;
+    margin-bottom: 8px;
 }
 
-.benefits-icon{
+.benefits svg{
     width: 64px;
     height: 64px;
     display: block;
 }
 
 .benefits .card-header{
-    margin: 8px 0;
+    margin: 8px 0 0;
 }
 .text{
     font-size: 16px;
@@ -297,14 +302,17 @@ img{
 }
 
 .team-list-links{
-    margin-top: 8px;
     display: flex;
+    justify-content: center;
+    margin-top: 8px;
     gap: 24px;
 }
 
-.media-links{
-    display: block;
-    padding: 12px;
+.team-links-card,
+.footer-links-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -312,12 +320,20 @@ img{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.media-links:hover,
-.media-links:focus{
+.media-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.team-links-card:hover,
+.team-links-card:focus{
     background-color: #404BBF;
 }
 
-.link-icon{
+.team .link-icon{
     display: block;
     fill: #F4F4FD;
     width: 16px;
@@ -366,21 +382,27 @@ img{
     overflow: hidden;
 }
 
-.overlay{
+.overlay-text{
     position: absolute;
-    background-color: #4D5AE5;
+    font-family: 'Roboto', sans-serif;
     color: #F4F4FD;
-    padding: 40px 32px 164px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 40px 32px;
     height: 100%;
     width: 100%;
-    bottom: 0;
+    top: 0;
     left: 0;
+    background-color: #4D5AE5;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-card:hover .overlay,
-.portfolio-card:focus .overlay{
+.portfolio-card:hover .overlay-text,
+.portfolio-card:focus .overlay-text{
     transform: translateY(0);
 }
 /* Portfolio Section */
@@ -394,7 +416,11 @@ img{
 
 .page-footer .container{
     display: flex;
-    gap: 120px;
+    align-items: baseline;
+}
+
+.footer-info{
+    margin-right: 120px;
 }
 
 .footer-logo-part{
@@ -415,16 +441,25 @@ img{
     gap: 16px;
 }
 
+/* '.footer-links-card' the same as 'team-links-card' */
+
 .footer-list-links .media-links{
-    padding: 8px;
+    width: 100%;
+    height: 100%;
 }
 
-.footer-list-links .link-icon{
+.footer-links-card:hover,
+.footer-links-card:focus{
+    background-color: #31d0aa;
+}
+
+.footer-list-links svg{
     width: 24px;
     height: 24px;
+    fill: #F4F4FD;
 }
 
-.page-footer h4{
+.footer-link-box p{
     font-family: 'Roboto', sans-serif;
     color: #fff;
     font-size: 16px;
