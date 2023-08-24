@@ -101,7 +101,11 @@ img{
     color: #404bbf;
 }
 
-.current::after{
+.current{
+    color: #404bbf;
+}
+
+.nav-links::after{
     position: absolute;
     bottom: -1px;
     left: 0;
@@ -113,8 +117,12 @@ img{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current:hover::after,
-.current:focus::after{
+.current::after{
+    background-color: #404bbf;
+}
+
+.nav-links:hover::after,
+.nav-links:focus::after{
     background-color: #404bbf;
 }
 
@@ -245,7 +253,7 @@ img{
     margin-bottom: 8px;
 }
 
-.benefits svg{
+.benefits-box svg{
     width: 64px;
     height: 64px;
     display: block;
@@ -316,8 +324,6 @@ img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #4D5AE5;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-links{
@@ -326,14 +332,17 @@ img{
     justify-content: center;
     width: 100%;
     height: 100%;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-links-card:hover,
-.team-links-card:focus{
+.media-links:hover,
+.media-links:focus{
     background-color: #404BBF;
 }
 
-.team .link-icon{
+.media-links svg{
     display: block;
     fill: #F4F4FD;
     width: 16px;
@@ -443,23 +452,29 @@ img{
 
 /* '.footer-links-card' the same as 'team-links-card' */
 
-.footer-list-links .media-links{
+.footer-media-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-links-card:hover,
-.footer-links-card:focus{
+.footer-media-links:hover,
+.footer-media-links:focus{
     background-color: #31d0aa;
 }
 
-.footer-list-links svg{
+.footer-media-links svg{
     width: 24px;
     height: 24px;
     fill: #F4F4FD;
 }
 
-.footer-link-box p{
+.footer-links-header{
     font-family: 'Roboto', sans-serif;
     color: #fff;
     font-size: 16px;
