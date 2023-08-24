@@ -254,8 +254,6 @@ img{
 }
 
 .benefits .link-icon{
-    width: 64;
-    height: 64;
     display: block;
 }
 
@@ -345,8 +343,6 @@ img{
 .team .link-icon{
     display: block;
     fill: #F4F4FD;
-    width: 16;
-    height: 16;
 }
 /* Team Section */
 
@@ -469,8 +465,7 @@ img{
 }
 
 .footer-media-links .link-icon{
-    width: 24;
-    height: 24;
+    display: block;
     fill: #F4F4FD;
 }
 
