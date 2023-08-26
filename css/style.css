@@ -300,10 +300,6 @@ img{
 }
 
 .team-card-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 32px 0;
 }
 
@@ -316,12 +312,8 @@ img{
 
 .team-links-card,
 .footer-links-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
 }
 
 .media-links{
