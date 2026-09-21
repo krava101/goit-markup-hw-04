@@ -1,0 +1,50 @@
+.header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--cornflower);
+}
+
+.header .container, .header .container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav {
+  display: flex;
+}
+
+.header .logo {
+  margin-right: 76px;
+}
+
+.header-nav-list,
+.header-address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header a {
+  display: block;
+  text-decoration: none;
+  color: var(--navy-blue);
+  padding: 24px 0;
+}
+
+.header a:hover,
+.header a:focus {
+  color: var(--ocean);
+}
+
+.logo span {
+  color: var(--iris);
+}
+
+.header-nav-list a {
+  font-weight: 500;
+}
+
+.header-address-list a {
+  color: var(--slate);
+  font-style: normal;
+}

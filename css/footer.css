@@ -1,0 +1,15 @@
+.footer {
+  padding: 100px 0;
+  background-color: var(--navy-blue);
+  color: var(--cloude);
+}
+
+.footer .logo {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer p{
+  max-width: 264px;
+  padding-top: 16px;
+}

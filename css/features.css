@@ -1,0 +1,18 @@
+.features{
+  padding: 120px 0;
+  background-color: var(--white);
+}
+
+.features-list{
+  display: flex;
+  gap: 24px;
+}
+
+.features-card{
+  flex-basis: calc(100% - 24px * 3);
+}
+
+.features .header-small{
+  text-align: left;
+  margin-bottom: 8px;
+}
