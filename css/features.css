@@ -1,18 +1,27 @@
-.features{
+.features {
   padding: 120px 0;
   background-color: var(--white);
 }
 
-.features-list{
+.features-list {
   display: flex;
   gap: 24px;
 }
 
-.features-card{
+.features-card {
   flex-basis: calc(100% - 24px * 3);
 }
 
-.features .header-small{
+.features .header-small {
   text-align: left;
   margin-bottom: 8px;
 }
+
+div:has(>.features-icon) {
+  padding: 24px 100px;
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  background: var(--cloude);
+  margin-bottom: 8px;
+}
+
