@@ -71,6 +71,9 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.logo span {
+  color: var(--iris);
+}
 
 .header-medium {
   color: var(--navy-blue);
@@ -117,7 +120,7 @@ address {
   gap: 24px;
 }
 
-.social-list a {
+.social-link {
   display: block;
   width: 40px;
   height: 40px;
@@ -127,8 +130,8 @@ address {
   transition: background-color 250ms var(--transition);
 }
 
-.social-list a:hover,
-.social-list a:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--ocean);
 }
 

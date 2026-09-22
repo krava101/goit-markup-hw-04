@@ -8,10 +8,10 @@
   ), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover, max(1440px);
+  background-size: cover;
 }
 
-.title {
+.hero .title {
   max-width: 496px;
   margin: 0 auto 48px;
   color: var(--white);
