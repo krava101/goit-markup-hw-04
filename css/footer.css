@@ -4,15 +4,15 @@
   color: var(--cloude);
 }
 
-.footer .container{
+.footer .container {
   display: flex;
 }
 
-.footer .logo-wrap{
+.footer .logo-wrap {
   margin-right: 120px;
 }
 
-.footer .logo-wrap p{
+.footer .logo-wrap p {
   max-width: 264px;
   padding-top: 16px;
 }
@@ -22,8 +22,17 @@
   text-decoration: none;
 }
 
-.footer .social-wrap p{
+.footer .social-wrap p {
   margin-bottom: 16px;
   font-weight: 500;
   color: var(--white);
+}
+
+.footer .social-link {
+  padding: 8px;
+}
+
+.footer .social-link:hover,
+.footer .social-link:focus {
+  background-color: var(--green);
 }
