@@ -24,15 +24,15 @@
 }
 
 .portfolio-card {
-  transition: 250ms box-shadow var(--transition);
+  transition: box-shadow 250ms var(--transition);
 }
 
 .portfolio-card:hover,
 .portfolio-card:focus {
   box-shadow:
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-card .overlay {
@@ -46,10 +46,11 @@
   top: 0;
   left: 0;
   height: 100%;
+  width: 100%;
   padding: 40px 32px;
   background-color: var(--iris);
   transform: translateY(100%);
-  transition: 250ms transform var(--transition);
+  transition: transform 250ms var(--transition);
 }
 
 .portfolio-card:hover .text,

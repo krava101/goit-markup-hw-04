@@ -28,6 +28,10 @@
   color: var(--white);
 }
 
+.footer .social-list {
+  gap: 16px;
+}
+
 .footer .social-link {
   padding: 8px;
 }

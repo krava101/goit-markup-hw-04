@@ -17,7 +17,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px 100px;
   height: 112px;
   border: 1px solid var(--light-slate);
   border-radius: 4px;

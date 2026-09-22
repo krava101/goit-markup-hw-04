@@ -3,15 +3,14 @@
   border-bottom: 1px solid var(--cornflower);
 }
 
-.header .container,
-.header .container > div {
+.header .container{
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .header nav {
   display: flex;
+  margin-right: 340px;
 }
 
 .header .logo {
@@ -35,11 +34,15 @@
 
 .header .nav-link {
   position: relative;
-  transition: 250ms color var(--transition);
+  transition: color 250ms var(--transition);
 }
 
 .header .address-link{
-  transition: 250ms color var(--transition);
+  transition: color 250ms var(--transition);
+}
+
+.nav-link.active{
+  color: var(--ocean);
 }
 
 .nav-link.active::after {
