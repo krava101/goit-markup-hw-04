@@ -34,7 +34,7 @@
 
 .header .nav-link {
   position: relative;
-  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms color var(--transition);
 }  
 
 .header .nav-link::after {
@@ -46,7 +46,7 @@
   height: 4px;
   border-radius: 2px;
   background-color: transparent;
-  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms background-color var(--transition);
 }
 
 .header .nav-link:hover,
