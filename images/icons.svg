@@ -94,5 +94,8 @@
         <symbol id="close" viewBox="0 0 8 8" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink">
             <path id="illustration3" fill="currentColor" d="M8 0.8057 7.1943 0 4 3.1943 0.8057 0 0 0.8057 3.1943 4 0 7.1943 0.8057 8 4 4.8057 7.1943 8 8 7.1943 4.8057 4z" />
         </symbol>
+        <symbol id="plane" viewBox="0 0 24 20" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path id="illustration" fill="currentColor" d="M24 0 0 11.25l7.6699 2.3672L19.5 4.375 10.5017 14.4913l73e-4 23e-4-9e-3-23e-4V20l4.3013-4.1817 5.4488 1.6817z" />
+        </symbol>
     </defs>
 </svg>
